@@ -1,0 +1,70 @@
+// Webfonts
+
+@each $font-face in fontello {
+  @font-face {
+    font-family: $font-face; 
+    font-style: normal; 
+    font-weight: normal;
+    src: url('/assets/fonts/#{$font-face}.eot');
+    src: url('/assets/fonts/#{$font-face}.eot?#iefix') format('embedded-opentype'),
+			   url('/assets/fonts/#{$font-face}.woff') format('woff'),
+			   url('/assets/fonts/#{$font-face}.ttf')  format('truetype'),
+			   url('/assets/fonts/#{$font-face}.svg?#{$font-face}')  format('svg');
+  }
+}
+
+//
+// Mixin setar uma webfont na propriedade font-family
+//
+
+@mixin font($font) {
+  font-family: $font;
+}
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  // opacity: .8; 
+ 
+ //
+// For safety - reset parent styles, that can break glyph codes
+// Por segurança - Resetando estilos de elementos, que poderiam quebrar os códigos glifos
+//  
+  font-variant: normal;
+  text-transform: none;
+//
+// fix buttons height, for twitter bootstrap 
+// Arrumando a altura dos botões, por causa do twitter bootstrap
+//
+  line-height: 1em;
+
+// 
+// Animation center compensation - margins should be symmetric
+// remove if not needed
+// Compensaçao da cetralização de animação - Margins deverão ser simétricas
+// remova caso não seja necessário
+//
+  margin-left: .2em;
+
+// 
+// you can be more comfortable with increased icons size 
+// font-size: 120%; 
+// Você pode se sentir mais confortável aumentando o tamanho dos ícones
+// font-size: 120%; 
+//
+
+//
+// Uncomment for 3D effect
+// text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+// Descomente para efeitos 3D
+// text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+//
+
+}
