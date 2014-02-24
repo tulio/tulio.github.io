@@ -6,6 +6,16 @@
 
 	> ul {
 		@extend %container;
-		
+
+		> li {
+			display: inline
+		}
+		a {
+			text-decoration: none;
+			color: #fff;
+			&:hover {
+				color: rgba(#fff, 0.9);
+			}
+		}
 	}
 }

@@ -177,7 +177,7 @@ td,
 th {
   padding: 0; }
 
-.header-social-nav > ul {
+.container, .header-social-nav > ul {
   margin: 0 auto;
   width: 978px; }
 
@@ -189,6 +189,13 @@ ol,
 ul,
 li {
   list-style: none; }
+
+body {
+  font-size: 100%;
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1; }
 
 .icon-github:before {
   content: "\e808"; }
@@ -229,3 +236,10 @@ li {
 
 .header-social-nav {
   background: #010101; }
+  .header-social-nav > ul > li {
+    display: inline; }
+  .header-social-nav > ul a {
+    text-decoration: none;
+    color: #fff; }
+    .header-social-nav > ul a:hover {
+      color: rgba(255, 255, 255, 0.9); }
