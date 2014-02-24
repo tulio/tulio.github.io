@@ -1,3 +1,11 @@
 .header {
 	width: 100%;
 }
+.header-social-nav {
+	background: #010101;
+
+	> ul {
+		@extend %container;
+		
+	}
+}
