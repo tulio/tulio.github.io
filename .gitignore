@@ -3,3 +3,4 @@
 _site
 assets/stylesheets/**/*
 !/assets/stylesheets/style.css
+!/assets/stylesheets/images/*

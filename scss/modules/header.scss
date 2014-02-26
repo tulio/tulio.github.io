@@ -1,21 +1,63 @@
 .header {
 	width: 100%;
+
+	.wrap-header {
+		background: #010101;
+	}
 }
-.header-social-nav {
-	background: #010101;
+.top {
+	@extend %container;
+	@extend %clearfix;
+	padding: 5px 0;
 
 	> ul {
-		@extend %container;
+		float: left;
 
 		> li {
 			display: inline
 		}
 		a {
-			text-decoration: none;
 			color: #fff;
+			font-size: em(18);
+			text-decoration: none;
+			vertical-align: middle;
+
 			&:hover {
 				color: rgba(#fff, 0.9);
 			}
+		}
+	}
+
+	.pull-right {
+		display: block;
+		float: right;
+		position: relative;
+
+		input[type="search"] {
+			@include transition (all 0.7s ease-in-out);
+			
+			background-color: #666;
+			border: none;
+			color: #fff;
+			font-size: em(16);
+			padding: 5px 25px 5px 5px;
+			width: 80px;
+			
+			&:focus {
+				@include transition (all 0.7s ease-in-out);
+				width: 200px;
+			}
+		}
+
+		button[type="submit"] {	
+			background: url(images/icons/search.png) left 2px no-repeat;
+			background-color: #666;
+			border: none;
+			height: 27px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 27px;
 		}
 	}
 }
