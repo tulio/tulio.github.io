@@ -1,0 +1,49 @@
+.main-header {
+	@extend %container;
+	
+	padding: 15px 0;
+
+	a {
+		color: #1F1F1F;
+		text-decoration: none;
+	}
+
+	h1 {
+		font-family: 'Ubuntu Condensed', sans-serif;
+		font-size: em(38);
+		margin: 0;
+		width: 200px;
+
+		> a:hover {
+			@include transition (all 0.3s ease-in-out);
+			
+			color: #00B8F5;
+		}
+	}
+	
+	.main-nav {
+		@extend %clearfix;
+
+		padding-top: 10px;
+	}
+
+	ul {
+		float: right;
+		> li {
+			float: left;
+			> a {
+				font-family: 'Ubuntu Condensed', sans-serif;
+				font-size: em(18);
+				margin-left: em(25);
+				text-transform: uppercase;
+
+				&:hover {
+					border-bottom: 4px solid #00B8F5;
+				}
+			}
+			&:first-child a {
+				margin-left: 0;
+			}
+		}
+	}
+}

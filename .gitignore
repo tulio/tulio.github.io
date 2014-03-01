@@ -1,6 +1,7 @@
 .DS_Store
 .sass-cache
 _site
-assets/stylesheets/**/*
-!/assets/stylesheets/style.css
-!/assets/stylesheets/images/*
+assets/stylesheets/core
+assets/stylesheets/modules
+assets/stylesheets/helpers
+assets/stylesheets/vendor

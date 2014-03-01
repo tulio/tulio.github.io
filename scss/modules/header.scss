@@ -1,5 +1,7 @@
 .header {
 	width: 100%;
+	background-color: #B8B8B8;
+	background-image: url(images/subtle_dots.png);
 
 	.wrap-header {
 		background: #010101;
@@ -8,6 +10,7 @@
 .top {
 	@extend %container;
 	@extend %clearfix;
+	
 	padding: 5px 0;
 
 	> ul {
@@ -23,7 +26,7 @@
 			vertical-align: middle;
 
 			&:hover {
-				color: rgba(#fff, 0.9);
+				color: #00B8F5;
 			}
 		}
 	}

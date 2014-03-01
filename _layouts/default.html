@@ -6,6 +6,7 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/assets/stylesheets/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="header">
@@ -28,31 +29,33 @@
             </form>         
         </div>
       </div>
-      <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-      <nav class="main-nav">
-        <ul>
-          <li>
-            <a href="/">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Quem sou
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Projetos
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Contato
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <section class="main-header">
+        <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+        <nav class="main-nav">
+          <ul>
+            <li>
+              <a href="/">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Quem sou
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Projetos
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Contato
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </div>
 
     {{ content }}
