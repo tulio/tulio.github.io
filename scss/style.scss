@@ -7,6 +7,7 @@
 @import "helpers/container";
 @import "helpers/box_shadow";
 @import "helpers/clearfix";
+@import "helpers/post_area";
 
 // Load core files
 @import "core/reset";
@@ -23,3 +24,4 @@
 @import "modules/featured_posts";
 @import "modules/main_aside";
 @import "modules/main_footer";
+@import "modules/post";

@@ -1,6 +1,5 @@
 .featured-posts {
-	width: 75%;
-	float: left;
+	@extend %post-area;
 
 	article {
 		@include box(10px, 15px);

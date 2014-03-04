@@ -384,6 +384,10 @@ th {
   .top:after, .main-header .main-nav:after, .main-content:after, .main-footer .info:after {
     clear: both; }
 
+.featured-posts, .post {
+  width: 75%;
+  float: left; }
+
 * {
   margin: 0;
   padding: 0;
@@ -397,12 +401,16 @@ li {
   list-style: none; }
 
 body {
+  color: #1F1F1F;
   font-size: 100%;
   line-height: 1.5;
   font-family: Helvetica,Arial,sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1; }
+
+h2 {
+  margin: 40px 0 20px; }
 
 .icon-github:before {
   content: "\e808"; }
@@ -520,47 +528,43 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-content h2 {
   font-size: 1em;
-  margin: 40px 0 20px;
   text-transform: uppercase; }
 
-.featured-posts {
-  width: 75%;
-  float: left; }
-  .featured-posts article {
-    border-radius: 15px;
-    padding: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    float: left;
-    height: 230px;
-    margin: 0 40px 30px 0;
-    overflow: hidden;
-    position: relative;
-    width: 45%; }
-    .featured-posts article * {
-      color: #1F1F1F; }
-    .featured-posts article:nth-child(2n+3) {
-      margin-right: 0; }
-    .featured-posts article:hover {
-      background-color: rgba(204, 204, 204, 0.08); }
-    .featured-posts article header {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      padding-bottom: 5px; }
-      .featured-posts article header a {
-        font-size: 1.25em;
-        text-decoration: none; }
-        .featured-posts article header a:hover {
-          color: #00b6b6; }
-    .featured-posts article footer {
-      background-color: rgba(31, 31, 31, 0.1);
-      bottom: 0;
-      left: 0;
-      padding: 5px 10px;
-      position: absolute;
-      text-align: right;
-      width: 100%; }
-      .featured-posts article footer > a {
-        font-style: italic;
-        font-size: 0.875em; }
+.featured-posts article {
+  border-radius: 15px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  float: left;
+  height: 230px;
+  margin: 0 40px 30px 0;
+  overflow: hidden;
+  position: relative;
+  width: 45%; }
+  .featured-posts article * {
+    color: #1F1F1F; }
+  .featured-posts article:nth-child(2n+3) {
+    margin-right: 0; }
+  .featured-posts article:hover {
+    background-color: rgba(204, 204, 204, 0.08); }
+  .featured-posts article header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 5px; }
+    .featured-posts article header a {
+      font-size: 1.25em;
+      text-decoration: none; }
+      .featured-posts article header a:hover {
+        color: #00b6b6; }
+  .featured-posts article footer {
+    background-color: rgba(31, 31, 31, 0.1);
+    bottom: 0;
+    left: 0;
+    padding: 5px 10px;
+    position: absolute;
+    text-align: right;
+    width: 100%; }
+    .featured-posts article footer > a {
+      font-style: italic;
+      font-size: 0.875em; }
 
 .main-aside {
   float: right;
@@ -584,6 +588,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #C2C2C2;
   font-size: 1em;
   margin-top: 30px;
+  overflow: hidden;
   width: 100%; }
   .main-footer h4 {
     border-bottom: 1px solid #00b6b6;
@@ -608,3 +613,9 @@ h1, h2, h3, h4, h5, h6 {
         margin-left: 0; }
     .main-footer .info .pull-right {
       float: right; }
+
+.post {
+  padding-right: 60px; }
+  .post h2 {
+    font-size: 1.625em;
+    text-transform: none; }

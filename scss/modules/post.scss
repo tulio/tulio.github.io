@@ -1,0 +1,9 @@
+.post {
+	@extend %post-area;
+	padding-right: 60px;
+
+	h2 {
+		font-size: em(26);
+		text-transform: none;
+	}
+}
