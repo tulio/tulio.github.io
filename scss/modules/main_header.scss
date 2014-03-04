@@ -17,7 +17,7 @@
 		> a:hover {
 			@include transition (all 0.3s ease-in-out);
 			
-			color: #00B8F5;
+			color: $secondary-color;
 		}
 	}
 	
@@ -38,7 +38,7 @@
 				text-transform: uppercase;
 
 				&:hover {
-					border-bottom: 4px solid #00B8F5;
+					border-bottom: 4px solid $secondary-color;
 				}
 			}
 			&:first-child a {

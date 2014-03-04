@@ -177,16 +177,211 @@ td,
 th {
   padding: 0; }
 
-.container, .top, .main-header {
-  margin: 0 auto;
-  width: 978px; }
+.highlight {
+  background: #ffffff; }
 
-.top, .main-header .main-nav {
+.highlight .c {
+  color: #999988;
+  font-style: italic; }
+
+.highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2; }
+
+.highlight .k {
+  font-weight: bold; }
+
+.highlight .o {
+  font-weight: bold; }
+
+.highlight .cm {
+  color: #999988;
+  font-style: italic; }
+
+.highlight .cp {
+  color: #999999;
+  font-weight: bold; }
+
+.highlight .c1 {
+  color: #999988;
+  font-style: italic; }
+
+.highlight .cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic; }
+
+.highlight .gd {
+  color: #000000;
+  background-color: #ffdddd; }
+
+.highlight .gd .x {
+  color: #000000;
+  background-color: #ffaaaa; }
+
+.highlight .ge {
+  font-style: italic; }
+
+.highlight .gr {
+  color: #aa0000; }
+
+.highlight .gh {
+  color: #999999; }
+
+.highlight .gi {
+  color: #000000;
+  background-color: #ddffdd; }
+
+.highlight .gi .x {
+  color: #000000;
+  background-color: #aaffaa; }
+
+.highlight .go {
+  color: #888888; }
+
+.highlight .gp {
+  color: #555555; }
+
+.highlight .gs {
+  font-weight: bold; }
+
+.highlight .gu {
+  color: #aaaaaa; }
+
+.highlight .gt {
+  color: #aa0000; }
+
+.highlight .kc {
+  font-weight: bold; }
+
+.highlight .kd {
+  font-weight: bold; }
+
+.highlight .kp {
+  font-weight: bold; }
+
+.highlight .kr {
+  font-weight: bold; }
+
+.highlight .kt {
+  color: #445588;
+  font-weight: bold; }
+
+.highlight .m {
+  color: #009999; }
+
+.highlight .s {
+  color: #dd1144; }
+
+.highlight .na {
+  color: teal; }
+
+.highlight .nb {
+  color: #0086b3; }
+
+.highlight .nc {
+  color: #445588;
+  font-weight: bold; }
+
+.highlight .no {
+  color: teal; }
+
+.highlight .ni {
+  color: purple; }
+
+.highlight .ne {
+  color: #990000;
+  font-weight: bold; }
+
+.highlight .nf {
+  color: #990000;
+  font-weight: bold; }
+
+.highlight .nn {
+  color: #555555; }
+
+.highlight .nt {
+  color: navy; }
+
+.highlight .nv {
+  color: teal; }
+
+.highlight .ow {
+  font-weight: bold; }
+
+.highlight .w {
+  color: #bbbbbb; }
+
+.highlight .mf {
+  color: #009999; }
+
+.highlight .mh {
+  color: #009999; }
+
+.highlight .mi {
+  color: #009999; }
+
+.highlight .mo {
+  color: #009999; }
+
+.highlight .sb {
+  color: #dd1144; }
+
+.highlight .sc {
+  color: #dd1144; }
+
+.highlight .sd {
+  color: #dd1144; }
+
+.highlight .s2 {
+  color: #dd1144; }
+
+.highlight .se {
+  color: #dd1144; }
+
+.highlight .sh {
+  color: #dd1144; }
+
+.highlight .si {
+  color: #dd1144; }
+
+.highlight .sx {
+  color: #dd1144; }
+
+.highlight .sr {
+  color: #009926; }
+
+.highlight .s1 {
+  color: #dd1144; }
+
+.highlight .ss {
+  color: #990073; }
+
+.highlight .bp {
+  color: #999999; }
+
+.highlight .vc {
+  color: teal; }
+
+.highlight .vg {
+  color: teal; }
+
+.highlight .vi {
+  color: teal; }
+
+.highlight .il {
+  color: #009999; }
+
+.container, .top, .main-header, .main-content {
+  margin: 0 auto;
+  width: 1142px; }
+
+.top, .main-header .main-nav, .main-content {
   *zoom: 1; }
-  .top:before, .main-header .main-nav:before, .top:after, .main-header .main-nav:after {
+  .top:before, .main-header .main-nav:before, .main-content:before, .top:after, .main-header .main-nav:after, .main-content:after {
     content: " ";
     display: table; }
-  .top:after, .main-header .main-nav:after {
+  .top:after, .main-header .main-nav:after, .main-content:after {
     clear: both; }
 
 * {
@@ -203,7 +398,8 @@ li {
 
 body {
   font-size: 100%;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-family: Helvetica,Arial,sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1; }
@@ -261,7 +457,7 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration: none;
       vertical-align: middle; }
       .top > ul a:hover {
-        color: #00B8F5; }
+        color: #00b6b6; }
   .top .pull-right {
     display: block;
     float: right;
@@ -305,7 +501,7 @@ h1, h2, h3, h4, h5, h6 {
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
-      color: #00B8F5; }
+      color: #00b6b6; }
   .main-header .main-nav {
     padding-top: 10px; }
   .main-header ul {
@@ -318,6 +514,67 @@ h1, h2, h3, h4, h5, h6 {
         margin-left: 1.5625em;
         text-transform: uppercase; }
         .main-header ul > li > a:hover {
-          border-bottom: 4px solid #00B8F5; }
+          border-bottom: 4px solid #00b6b6; }
       .main-header ul > li:first-child a {
         margin-left: 0; }
+
+.main-content h2 {
+  font-size: 1em;
+  margin: 40px 0 20px;
+  text-transform: uppercase; }
+
+.featured-posts {
+  width: 75%;
+  float: left; }
+  .featured-posts article {
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    float: left;
+    height: 230px;
+    margin: 0 40px 30px 0;
+    overflow: hidden;
+    position: relative;
+    width: 45%; }
+    .featured-posts article * {
+      color: #1F1F1F; }
+    .featured-posts article:nth-child(2n+3) {
+      margin-right: 0; }
+    .featured-posts article:hover {
+      background-color: rgba(204, 204, 204, 0.08); }
+    .featured-posts article header {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding-bottom: 5px; }
+      .featured-posts article header a {
+        font-size: 1.25em;
+        text-decoration: none; }
+        .featured-posts article header a:hover {
+          color: #00b6b6; }
+    .featured-posts article footer {
+      background-color: rgba(31, 31, 31, 0.1);
+      bottom: 0;
+      left: 0;
+      padding: 5px 10px;
+      position: absolute;
+      text-align: right;
+      width: 100%; }
+      .featured-posts article footer > a {
+        font-style: italic;
+        font-size: 0.875em; }
+
+.main-aside {
+  float: right;
+  width: 25%; }
+  .main-aside .aside-nav {
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px double rgba(0, 0, 0, 0.1); }
+    .main-aside .aside-nav ul li {
+      margin-top: 5px; }
+      .main-aside .aside-nav ul li:first-child {
+        margin-top: 0; }
+    .main-aside .aside-nav a {
+      color: #1F1F1F;
+      text-decoration: none; }
+      .main-aside .aside-nav a:hover {
+        border-bottom: 2px solid #00b6b6; }

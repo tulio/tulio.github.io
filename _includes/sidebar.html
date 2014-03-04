@@ -1,0 +1,10 @@
+<aside class="main-aside">
+	<h2>Arquivos do Blog</h2>
+	<nav class="aside-nav">
+		<ul>
+			{% for posts in site.posts %}
+				<li><a href="{{ posts.url }}">{{ posts.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</nav>
+</aside>

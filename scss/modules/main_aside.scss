@@ -1,0 +1,28 @@
+.main-aside {
+	float: right;
+	width: 25%;
+	
+	.aside-nav {
+		@include box(10px, 15px);
+
+		border: 1px double rgba(#000,0.1);
+		
+		ul {
+			li {
+				margin-top: 5px;
+								
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+		}
+
+		a {
+			color: #1F1F1F;
+			text-decoration: none;
+			&:hover {
+				border-bottom: 2px solid $secondary-color;
+			}
+		}
+	}
+}

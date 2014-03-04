@@ -1,6 +1,7 @@
 // Vendor CSS
 @import "vendor/normalize";
 @import "vendor/bourbon/bourbon";
+@import "vendor/syntax";
 
 // Load helpers
 @import "helpers/container";
@@ -13,7 +14,11 @@
 @import "core/base";
 @import "core/typography";
 @import "core/layout";
+@import "core/box";
 
 // Load all modules
 @import "modules/header";
 @import "modules/main_header";
+@import "modules/main_content";
+@import "modules/featured_posts";
+@import "modules/main_aside";

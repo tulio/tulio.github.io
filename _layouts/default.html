@@ -6,7 +6,6 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/assets/stylesheets/style.css">
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="header">
@@ -58,7 +57,11 @@
       </section>
     </div>
 
-    {{ content }}
+    <main class="main-content">
+      {{ content }}
+
+      {% include sidebar.html %}
+    </main>
 
     <footer class="main-footer">
       <div class="footer-social">
@@ -89,4 +92,5 @@
       </section>
     </footer>
   </body>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
 </html>

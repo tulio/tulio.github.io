@@ -1,0 +1,7 @@
+//
+// Mixin para configuração dos box
+//
+@mixin box ($padding, $border-radius) {
+	border-radius: $border-radius;
+	padding: $padding;
+}
