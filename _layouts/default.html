@@ -11,6 +11,7 @@
     <div class="header">
       <div class="wrap-header">
         <div class="top">
+
             <ul>
               <li>
                 <a href="https://github.com/tulio" target="_blank" class="icon-github"></a>
@@ -22,10 +23,14 @@
                 <a href="http://facebook.com/tuliofreitas" target="_blank" class="icon-facebook"></a>
               </li>
             </ul>
-            <form action="" class="pull-right">
-              <input type="search" name="q" placeholder="Procurar">
-              <button type="submit"></button>
-            </form>         
+         
+              <form action="/search.html" method="get" class="pull-right">
+                <fieldset role="search">
+                  <input type="search" class="search" id="tipue_search_input" name="q" results="0" placeholder="Procurar">
+                  <button type="submit"></button>
+                </fieldset>
+              </form>
+
         </div>
       </div>
       <section class="main-header">
@@ -118,4 +123,11 @@
     </footer>
   </body>
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+
+  <script>
+    window.jQuery || document.write('<script src="assets/javascripts/jquery.js"><\/script>')
+  </script>
+  <script src="assets/javascripts/tipuesearch_set.js"></script>
+  <script src="assets/javascripts/tipuesearch.js"></script>
+  <script src="assets/javascripts/scripts.js"></script>
 </html>
