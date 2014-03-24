@@ -1,6 +1,7 @@
 .DS_Store
 .sass-cache
 _site
+node_modules/
 assets/stylesheets/core
 assets/stylesheets/modules
 assets/stylesheets/helpers
