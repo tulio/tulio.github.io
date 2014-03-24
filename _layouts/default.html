@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ page.title }} - {{site.name}}</title>
     <meta name="viewport" content="width=device-width">
-    {% if site.env == 'production' %}
+    {% if site.GH_ENV == 'gh_pages' %}
       <link rel="stylesheet" href="/assets/stylesheets/style.css">
     {% else %}
       <link rel="stylesheet" href="/assets/stylesheets/style.development.css">
@@ -128,7 +128,7 @@
   </body>
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
 
-  {% if site.env == 'production' %}
+  {% if site.GH_ENV == 'gh_pages' %}
     <script src="assets/javascripts/myapp.production.js"></script>
   {% else %}
     <script src="assets/javascripts/myapp.development.js"></script>
