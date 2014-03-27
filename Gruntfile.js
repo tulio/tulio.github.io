@@ -17,7 +17,7 @@ module.exports = function(grunt){
 
 	concat.dev = {
 		files: {
-			"assets/javascripts/myapp.development.js": [
+			"assets/javascripts/myapp.dev.js": [
 					"assets/javascripts/jquery.js"
 				,	"assets/javascripts/tipuesearch.js"
 				, "assets/javascripts/tipuesearch_set.js"
@@ -57,7 +57,7 @@ module.exports = function(grunt){
       sourceMapName: "assets/javascripts/myapp.map"
 		},
 		files: {
-			"assets/javascripts/myapp.production.js": ["assets/javascripts/myapp.development.js"]
+			"assets/javascripts/myapp.dist.js": ["assets/javascripts/myapp.dev.js"]
 		}
 	}}
 
@@ -68,14 +68,14 @@ module.exports = function(grunt){
 	sass.dist = {
 			options: {style: "compressed"}
 		, files: {
-			"assets/stylesheets/style.css": "scss/style.scss"
+			"assets/stylesheets/style.dist.css": "scss/style.scss"
 		}
 	};
 
 	sass.dev = {
 			options: {style: "expanded", lineNumber: true}
 		, files: {
-			"assets/stylesheets/style.development.css": "scss/style.scss"
+			"assets/stylesheets/style.dev.css": "scss/style.scss"
 		}
 	};
 
