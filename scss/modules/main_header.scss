@@ -1,7 +1,10 @@
 .main-header {
 	@extend %container;
 	
+	display: table;
 	padding: 15px 0;
+
+
 
 	a {
 		color: #1F1F1F;
@@ -9,6 +12,7 @@
 	}
 
 	h1 {
+		display: table-cell;
 		font-family: 'Ubuntu Condensed', sans-serif;
 		font-size: em(38);
 		margin: 0;
