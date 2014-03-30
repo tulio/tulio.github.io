@@ -594,7 +594,7 @@ th {
 
 /* line 4, ../../scss/helpers/_post_area.scss */
 .featured-posts, .post, .search-results, .about {
-  width: 75%;
+  width: 70%;
   float: left;
 }
 
@@ -827,10 +827,10 @@ h2 {
   border: 1px solid rgba(0, 0, 0, 0.1);
   float: left;
   height: 230px;
-  margin: 0 40px 30px 0;
+  margin: 0 0 30px 0;
   overflow: hidden;
   position: relative;
-  width: 45%;
+  width: 48%;
 }
 /* line 15, ../../scss/modules/featured_posts.scss */
 .featured-posts article * {
@@ -838,7 +838,7 @@ h2 {
 }
 /* line 19, ../../scss/modules/featured_posts.scss */
 .featured-posts article:nth-child(2n+3) {
-  margin-right: 0;
+  float: right;
 }
 /* line 23, ../../scss/modules/featured_posts.scss */
 .featured-posts article:hover {
