@@ -598,6 +598,11 @@ th {
   float: left;
 }
 
+/* line 1, ../../scss/helpers/_title_margin.scss */
+h3, .post h2 {
+  margin: 40px 0 20px;
+}
+
 /* line 1, ../../scss/core/reset.scss */
 * {
   margin: 0;
@@ -625,11 +630,6 @@ body {
 /* line 8, ../../scss/core/base.scss */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
-}
-
-/* line 12, ../../scss/core/base.scss */
-h2 {
-  margin: 40px 0 20px;
 }
 
 /* line 16, ../../scss/core/base.scss */
@@ -678,58 +678,59 @@ h2 {
 
 /* line 1, ../../scss/modules/header.scss */
 .header {
-  width: 100%;
   background-color: #B8B8B8;
   background-image: url(images/subtle_dots.png);
+  box-shadow: 0 0 10px;
+  width: 100%;
 }
-/* line 6, ../../scss/modules/header.scss */
+/* line 7, ../../scss/modules/header.scss */
 .header .wrap-header {
   background: #010101;
 }
 
-/* line 10, ../../scss/modules/header.scss */
+/* line 11, ../../scss/modules/header.scss */
 .top {
   padding: 5px 0;
 }
-/* line 16, ../../scss/modules/header.scss */
+/* line 17, ../../scss/modules/header.scss */
 .top > ul {
   float: left;
 }
-/* line 19, ../../scss/modules/header.scss */
+/* line 20, ../../scss/modules/header.scss */
 .top > ul > li {
   display: inline;
 }
-/* line 22, ../../scss/modules/header.scss */
+/* line 23, ../../scss/modules/header.scss */
 .top > ul a {
   color: #fff;
   font-size: 1.125em;
   text-decoration: none;
   vertical-align: middle;
 }
-/* line 28, ../../scss/modules/header.scss */
+/* line 29, ../../scss/modules/header.scss */
 .top > ul a:hover {
   color: #00b6b6;
 }
-/* line 34, ../../scss/modules/header.scss */
+/* line 35, ../../scss/modules/header.scss */
 .top .pull-right {
   display: block;
   float: right;
   position: relative;
 }
-/* line 39, ../../scss/modules/header.scss */
+/* line 40, ../../scss/modules/header.scss */
 .top .pull-right fieldset {
   border: none;
   margin: 0;
   padding: 0;
 }
-/* line 45, ../../scss/modules/header.scss */
+/* line 46, ../../scss/modules/header.scss */
 .top .pull-right input[type="search"]::-webkit-search-decoration,
 .top .pull-right input[type="search"]::-webkit-search-cancel-button,
 .top .pull-right input[type="search"]::-webkit-search-results-button,
 .top .pull-right input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
-/* line 52, ../../scss/modules/header.scss */
+/* line 53, ../../scss/modules/header.scss */
 .top .pull-right input[type="search"] {
   -webkit-transition: all 0.7s ease-in-out;
   -moz-transition: all 0.7s ease-in-out;
@@ -741,14 +742,14 @@ h2 {
   padding: 5px 25px 5px 5px;
   width: 80px;
 }
-/* line 63, ../../scss/modules/header.scss */
+/* line 64, ../../scss/modules/header.scss */
 .top .pull-right input[type="search"]:focus {
   -webkit-transition: all 0.7s ease-in-out;
   -moz-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
   width: 200px;
 }
-/* line 69, ../../scss/modules/header.scss */
+/* line 70, ../../scss/modules/header.scss */
 .top .pull-right button[type="submit"] {
   background: url(images/icons/search.png) left 2px no-repeat;
   background-color: #666;
@@ -815,7 +816,7 @@ h2 {
 }
 
 /* line 5, ../../scss/modules/main_content.scss */
-.main-content h2 {
+.main-content h3 {
   font-size: 1em;
   text-transform: uppercase;
 }
@@ -1084,4 +1085,8 @@ h2 {
 /* line 4, ../../scss/modules/about.scss */
 .about p {
   margin-bottom: 10px;
+}
+/* line 8, ../../scss/modules/about.scss */
+.about h3 {
+  font-size: 0.875em;
 }
