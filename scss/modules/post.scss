@@ -3,6 +3,9 @@
 	padding-right: 60px;
 
 	h2 {
+	
+		@extend %title-margin;
+
 		font-size: em(26);
 		text-transform: none;
 	}

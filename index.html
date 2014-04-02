@@ -4,11 +4,11 @@ title: Home
 ---
 
 <section class="featured-posts">
-	<h2>Últimas publicações</h2>
+	<h3>Últimas publicações</h3>
 	{% for post in site.posts limit 4 %}
 		<article>
 			<header>
-				<h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
+				<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
 			</header>
 			<p>
 				{{ post.content | strip_html | truncatewords:30}}
