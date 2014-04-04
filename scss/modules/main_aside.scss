@@ -1,6 +1,10 @@
 .main-aside {
 	float: right;
 	width: 25%;
+
+	h3 {
+		@extend %title-margin;
+	}
 	
 	.aside-nav {
 		@include box(10px, 15px);

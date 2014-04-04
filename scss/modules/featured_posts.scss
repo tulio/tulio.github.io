@@ -1,6 +1,10 @@
 .featured-posts {
 	@extend %post-area;
 
+	h3 {
+		@extend %title-margin;
+	}
+
 	article {
 		@include box(10px, 15px);
 

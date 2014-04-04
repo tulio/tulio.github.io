@@ -5,8 +5,13 @@
 		margin-bottom: 10px;
 	}
 
+	h2 {
+		@extend %title-margin;
+	}
+
 	h3 {
 		font-size: em(14);
+		margin: 10px 0;
 	}
 
 }
