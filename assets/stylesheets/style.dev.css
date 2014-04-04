@@ -791,27 +791,28 @@ h1, h2, h3, h4, h5, h6 {
 /* line 28, ../../scss/modules/main_header.scss */
 .main-header .main-nav {
   padding-top: 10px;
+  float: right;
 }
-/* line 34, ../../scss/modules/main_header.scss */
+/* line 35, ../../scss/modules/main_header.scss */
 .main-header ul {
   float: right;
 }
-/* line 36, ../../scss/modules/main_header.scss */
+/* line 37, ../../scss/modules/main_header.scss */
 .main-header ul > li {
   float: left;
 }
-/* line 38, ../../scss/modules/main_header.scss */
+/* line 39, ../../scss/modules/main_header.scss */
 .main-header ul > li > a {
   font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 1.125em;
   margin-left: 1.5625em;
   text-transform: uppercase;
 }
-/* line 44, ../../scss/modules/main_header.scss */
+/* line 45, ../../scss/modules/main_header.scss */
 .main-header ul > li > a:hover {
   border-bottom: 4px solid #00b6b6;
 }
-/* line 48, ../../scss/modules/main_header.scss */
+/* line 49, ../../scss/modules/main_header.scss */
 .main-header ul > li:first-child a {
   margin-left: 0;
 }
