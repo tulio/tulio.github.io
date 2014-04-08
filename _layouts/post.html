@@ -6,12 +6,9 @@ comments: true
 
 	<header>
 		<h2>{{ page.title }}</h2>
+		<p class="date">Publicado em: {{ page.date | date: "%d/%m/%Y" }}</p>
 	</header>
 
 		{{ content }}
-
-		<footer>
-			<p class="date">Publicado em: {{ page.date | date: "%d/%m/%Y" }}</p>
-		</footer>
 
 </article>
