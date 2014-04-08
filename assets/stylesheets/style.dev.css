@@ -573,7 +573,7 @@ th {
 }
 
 /* line 2, ../../scss/helpers/_container.scss */
-.container, .top, .main-header, .main-content, .main-footer .info, .comments {
+.container, .top, .main-header, .main-content, .main-footer .info, .comments, .no-js {
   margin: 0 auto;
   width: 1142px;
 }
@@ -821,6 +821,10 @@ h1, h2, h3, h4, h5, h6 {
 .main-content h3 {
   font-size: 1em;
 }
+/* line 9, ../../scss/modules/main_content.scss */
+.main-content a {
+  color: #00b6b6;
+}
 
 /* line 8, ../../scss/modules/featured_posts.scss */
 .featured-posts article {
@@ -966,6 +970,10 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none;
 }
 /* line 13, ../../scss/modules/post.scss */
+.post .highlight {
+  margin: 15px 0;
+}
+/* line 17, ../../scss/modules/post.scss */
 .post .date {
   color: #888;
   font-size: 0.75em;
@@ -1093,13 +1101,22 @@ h1, h2, h3, h4, h5, h6 {
 .about p {
   margin-bottom: 10px;
 }
-/* line 12, ../../scss/modules/about.scss */
+/* line 7, ../../scss/modules/about.scss */
+.about p.ps {
+  margin: 25px 0;
+  font-style: italic;
+}
+/* line 17, ../../scss/modules/about.scss */
 .about h3 {
-  font-size: 0.875em;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 /* line 1, ../../scss/modules/comments.scss */
 .comments {
   padding: 40px 0;
+}
+
+/* line 4, ../../scss/modules/no_js.scss */
+.no-js a {
+  color: #00b6b6;
 }
