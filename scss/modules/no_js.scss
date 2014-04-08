@@ -1,0 +1,7 @@
+.no-js {
+	@extend %container;
+
+	a {
+		color: $secondary-color;
+	}
+}
