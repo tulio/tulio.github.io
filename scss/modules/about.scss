@@ -3,6 +3,11 @@
 
 	p {
 		margin-bottom: 10px;
+
+		&.ps {
+			margin: 25px 0;
+			font-style: italic;
+		}
 	}
 
 	h2 {
@@ -10,8 +15,7 @@
 	}
 
 	h3 {
-		font-size: em(14);
-		margin: 10px 0;
+		margin: 15px 0;
 	}
 
 }
