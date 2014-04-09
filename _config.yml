@@ -1,3 +1,6 @@
 name: Túlio Freitas
 markdown: redcarpet
 pygments: true
+permalink: /:year/:month/:title/
+url: http://tulio.github.io
+exclude: ["node_modules", "search.html"]
