@@ -68,14 +68,14 @@ module.exports = function(grunt){
 	sass.dist = {
 			options: {style: "compressed"}
 		, files: {
-			"assets/stylesheets/style.dist.css": "scss/style.scss"
+			"assets/stylesheets/style.dist.css": "assets/scss/style.scss"
 		}
 	};
 
 	sass.dev = {
 			options: {style: "expanded", lineNumber: true}
 		, files: {
-			"assets/stylesheets/style.dev.css": "scss/style.scss"
+			"assets/stylesheets/style.dev.css": "assets/scss/style.scss"
 		}
 	};
 
@@ -83,7 +83,7 @@ module.exports = function(grunt){
 	// Watch ============================================================
 	config.watch = {
 		scripts: {
-				files: ["assets/javascripts/scripts.js", "scss/**/*.scss"]
+				files: ["assets/javascripts/scripts.js", "assets/scss/**/*.scss"]
 			, tasks: ["dev"]
 		}
 	};
