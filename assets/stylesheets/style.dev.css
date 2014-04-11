@@ -599,7 +599,7 @@ th {
 }
 
 /* line 5, ../scss/helpers/_title_margin.scss */
-.featured-posts h3, .main-aside h3, .post h2, .about h2 {
+.featured-posts h3, .main-aside h3, .post h2, .search-results .count, .about h2 {
   margin: 40px 0 20px;
   text-transform: uppercase;
 }
@@ -980,62 +980,62 @@ h1, h2, h3, h4, h5, h6 {
   margin: 5px 0;
 }
 
-/* line 4, ../scss/modules/search_results.scss */
+/* line 8, ../scss/modules/search_results.scss */
 .search-results .tipue_search_content_title a {
   color: #00b6b6;
   font-size: 1.375em;
   text-decoration: none;
 }
-/* line 10, ../scss/modules/search_results.scss */
+/* line 14, ../scss/modules/search_results.scss */
 .search-results .tipue_search_content_text {
   font-size: 1em;
 }
-/* line 14, ../scss/modules/search_results.scss */
+/* line 18, ../scss/modules/search_results.scss */
 .search-results .tipue_search_content_loc {
   border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
   padding-bottom: 20px;
 }
-/* line 19, ../scss/modules/search_results.scss */
+/* line 23, ../scss/modules/search_results.scss */
 .search-results .tipue_search_content_loc a {
   color: #1F1F1F;
   font-style: italic;
 }
-/* line 25, ../scss/modules/search_results.scss */
+/* line 29, ../scss/modules/search_results.scss */
 .search-results ul {
   width: 100%;
 }
-/* line 31, ../scss/modules/search_results.scss */
+/* line 35, ../scss/modules/search_results.scss */
 .search-results li {
   border: 1px solid #428bca;
   color: #1F1F1F;
   float: left;
   padding: 10px;
 }
-/* line 38, ../scss/modules/search_results.scss */
+/* line 42, ../scss/modules/search_results.scss */
 .search-results li:first-child {
   border-right: none;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
 }
-/* line 44, ../scss/modules/search_results.scss */
+/* line 48, ../scss/modules/search_results.scss */
 .search-results li:last-child {
   border-left: none;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
 }
-/* line 50, ../scss/modules/search_results.scss */
+/* line 54, ../scss/modules/search_results.scss */
 .search-results li > a {
   color: #1F1F1F;
   text-decoration: none;
 }
-/* line 55, ../scss/modules/search_results.scss */
+/* line 59, ../scss/modules/search_results.scss */
 .search-results .current, .search-results li:hover {
   background-color: rgba(0, 182, 182, 0.3);
   color: #1F1F1F;
 }
 
-/* line 61, ../scss/modules/search_results.scss */
+/* line 65, ../scss/modules/search_results.scss */
 #tipue_search_content {
   padding: 6px 12px;
 }

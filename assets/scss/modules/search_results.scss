@@ -1,6 +1,10 @@
 .search-results {
 	@extend %post-area;
 
+	.count {
+		@extend %title-margin;
+	}
+
 	.tipue_search_content_title a {
 		color: $secondary-color;
 		font-size: em(22);
