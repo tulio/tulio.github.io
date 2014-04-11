@@ -17,7 +17,7 @@ module.exports = function(grunt){
 
 	concat.dev = {
 		files: {
-			"assets/javascripts/myapp.dev.js": [
+					"assets/javascripts/myapp.dev.js": [
 					"assets/javascripts/jquery.js"
 				,	"assets/javascripts/tipuesearch.js"
 				, "assets/javascripts/tipuesearch_set.js"
@@ -83,7 +83,7 @@ module.exports = function(grunt){
 	// Watch ============================================================
 	config.watch = {
 		scripts: {
-				files: ["assets/javascripts/scripts.js", "assets/scss/**/*.scss"]
+				files: ["assets/javascripts/**/*.js", "assets/scss/**/*.scss"]
 			, tasks: ["dev"]
 		}
 	};
