@@ -10351,7 +10351,7 @@ http://www.tipue.com/search
 
           var set = $.extend( {
           
-               'show'                   : 2,
+               'show'                   : 10,
                'newWindow'              : false,
                'showURL'                : true,
                'minimumLength'          : 1,
@@ -10570,7 +10570,7 @@ http://www.tipue.com/search
                               else
                               {
                                    c_c = c.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                                   out += '<div id="tipue_search_results_count">' + c_c + ' Resultados</div>';
+                                   out += '<div class="count" id="tipue_search_results_count">' + c_c + ' Resultados</div>';
                               }
                               
                               found.sort();
