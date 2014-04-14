@@ -2,7 +2,7 @@ body {
 	color: #1F1F1F;
   font-size: 100%;
   line-height: 1.5;
-  font-family: Helvetica,Arial,sans-serif;
+  font-family: Helvetica,Arial, serif, sans-serif, ;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,3 +22,21 @@ h1, h2, h3, h4, h5, h6 {
 .icon-gplus:before { 
 	content: $gplus;
 }
+
+// 
+//	@mixin para gerar o pseduo seletor "::selections" com o vendors prefixes.
+//
+
+
+$prefixes: ("-moz-", "");
+@mixin selection($color, $background, $text-shadow:none) {
+  @each $prefix in $prefixes {
+    ::#{$prefix}selection {
+	    color: $color;
+	    background: $background;
+	    text-shadow: $text-shadow;
+    }
+  }
+}
+
+@include selection(#fff, $secondary-color);
