@@ -8,6 +8,11 @@
 
 	a {
 		color: $secondary-color;
+		text-decoration: none;
+
+		&:hover {
+			color: rgba($secondary-color,0.8);
+		}
 	}
 
 }
