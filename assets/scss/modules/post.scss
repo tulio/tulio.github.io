@@ -1,12 +1,12 @@
 .post {
 	@extend %post-area;
-	padding-right: 60px;
+	padding-right: 2%;
 
 	h2 {
 	
 		@extend %title-margin;
 
-		font-size: em(26);
+		font-size: em(30);
 		text-transform: none;
 	}
 
