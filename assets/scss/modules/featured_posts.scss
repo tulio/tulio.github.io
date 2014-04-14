@@ -1,6 +1,13 @@
 .featured-posts {
 	@extend %post-area;
 
+	width: 70%;
+
+	p {
+		font-size: em(16);
+		line-height: 1.5;
+	}
+
 	h3 {
 		@extend %title-margin;
 	}
