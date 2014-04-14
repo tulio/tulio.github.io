@@ -2,6 +2,12 @@
 // Delimita a área do post.
 //
 %post-area {
-	width: 70%;
+	width: 75%;
 	float: left;
+
+	p {
+		color: #555;
+		font-size: em(18);
+		line-height: 1.8;
+	}
 }
