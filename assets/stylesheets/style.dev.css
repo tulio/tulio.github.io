@@ -593,14 +593,20 @@ th {
 }
 
 /* line 4, ../scss/helpers/_post_area.scss */
-.featured-posts, .post, .search-results, .about {
-  width: 70%;
+.featured-posts, .post, .search-results {
+  width: 75%;
   float: left;
+}
+/* line 8, ../scss/helpers/_post_area.scss */
+.featured-posts p, .post p, .search-results p {
+  color: #555;
+  font-size: 1.125em;
+  line-height: 1.8;
 }
 
 /* line 5, ../scss/helpers/_title_margin.scss */
 .featured-posts h3, .main-aside h3, .post h2, .search-results .count, .about h2 {
-  margin: 40px 0 20px;
+  margin: 0 0 20px;
   text-transform: uppercase;
 }
 
@@ -625,7 +631,7 @@ body {
   color: #1F1F1F;
   font-size: 100%;
   line-height: 1.5;
-  font-family: Helvetica,Arial,sans-serif;
+  font-family: Helvetica, Arial, serif, sans-serif;
 }
 
 /* line 8, ../scss/core/base.scss */
@@ -651,6 +657,20 @@ h1, h2, h3, h4, h5, h6 {
 /* line 22, ../scss/core/base.scss */
 .icon-gplus:before {
   content: "\e806";
+}
+
+/* line 34, ../scss/core/base.scss */
+::-moz-selection {
+  color: white;
+  background: #00b6b6;
+  text-shadow: none;
+}
+
+/* line 34, ../scss/core/base.scss */
+::selection {
+  color: white;
+  background: #00b6b6;
+  text-shadow: none;
 }
 
 @font-face {
@@ -682,56 +702,57 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #B8B8B8;
   background-image: url(images/subtle_dots.png);
   box-shadow: 0 0 10px;
+  margin-bottom: 40px;
   width: 100%;
 }
-/* line 7, ../scss/modules/header.scss */
+/* line 8, ../scss/modules/header.scss */
 .header .wrap-header {
   background: #010101;
 }
 
-/* line 11, ../scss/modules/header.scss */
+/* line 12, ../scss/modules/header.scss */
 .top {
   padding: 5px 0;
 }
-/* line 17, ../scss/modules/header.scss */
+/* line 18, ../scss/modules/header.scss */
 .top > ul {
   float: left;
 }
-/* line 20, ../scss/modules/header.scss */
+/* line 21, ../scss/modules/header.scss */
 .top > ul > li {
   display: inline;
 }
-/* line 23, ../scss/modules/header.scss */
+/* line 24, ../scss/modules/header.scss */
 .top > ul a {
   color: #fff;
   font-size: 1.125em;
   text-decoration: none;
   vertical-align: middle;
 }
-/* line 29, ../scss/modules/header.scss */
+/* line 30, ../scss/modules/header.scss */
 .top > ul a:hover {
   color: #00b6b6;
 }
-/* line 35, ../scss/modules/header.scss */
+/* line 36, ../scss/modules/header.scss */
 .top .pull-right {
   display: block;
   float: right;
   position: relative;
 }
-/* line 40, ../scss/modules/header.scss */
+/* line 41, ../scss/modules/header.scss */
 .top .pull-right fieldset {
   border: none;
   margin: 0;
   padding: 0;
 }
-/* line 46, ../scss/modules/header.scss */
+/* line 47, ../scss/modules/header.scss */
 .top .pull-right input[type="search"]::-webkit-search-decoration,
 .top .pull-right input[type="search"]::-webkit-search-cancel-button,
 .top .pull-right input[type="search"]::-webkit-search-results-button,
 .top .pull-right input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
-/* line 53, ../scss/modules/header.scss */
+/* line 54, ../scss/modules/header.scss */
 .top .pull-right input[type="search"] {
   -webkit-transition: all 0.7s ease-in-out;
   -moz-transition: all 0.7s ease-in-out;
@@ -743,14 +764,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px 25px 5px 5px;
   width: 80px;
 }
-/* line 64, ../scss/modules/header.scss */
+/* line 65, ../scss/modules/header.scss */
 .top .pull-right input[type="search"]:focus {
   -webkit-transition: all 0.7s ease-in-out;
   -moz-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
   width: 200px;
 }
-/* line 70, ../scss/modules/header.scss */
+/* line 71, ../scss/modules/header.scss */
 .top .pull-right button[type="submit"] {
   background: url(images/icons/search.png) left 2px no-repeat;
   background-color: #666;
@@ -824,9 +845,23 @@ h1, h2, h3, h4, h5, h6 {
 /* line 9, ../scss/modules/main_content.scss */
 .main-content a {
   color: #00b6b6;
+  text-decoration: none;
+}
+/* line 13, ../scss/modules/main_content.scss */
+.main-content a:hover {
+  color: rgba(0, 182, 182, 0.8);
 }
 
-/* line 8, ../scss/modules/featured_posts.scss */
+/* line 1, ../scss/modules/featured_posts.scss */
+.featured-posts {
+  width: 70%;
+}
+/* line 6, ../scss/modules/featured_posts.scss */
+.featured-posts p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+/* line 15, ../scss/modules/featured_posts.scss */
 .featured-posts article {
   border-radius: 15px;
   padding: 10px;
@@ -838,33 +873,33 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   width: 48%;
 }
-/* line 19, ../scss/modules/featured_posts.scss */
+/* line 26, ../scss/modules/featured_posts.scss */
 .featured-posts article * {
   color: #1F1F1F;
 }
-/* line 23, ../scss/modules/featured_posts.scss */
+/* line 30, ../scss/modules/featured_posts.scss */
 .featured-posts article:nth-child(2n+3) {
   float: right;
 }
-/* line 27, ../scss/modules/featured_posts.scss */
+/* line 34, ../scss/modules/featured_posts.scss */
 .featured-posts article:hover {
   background-color: rgba(204, 204, 204, 0.08);
 }
-/* line 31, ../scss/modules/featured_posts.scss */
+/* line 38, ../scss/modules/featured_posts.scss */
 .featured-posts article header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 5px;
 }
-/* line 34, ../scss/modules/featured_posts.scss */
+/* line 41, ../scss/modules/featured_posts.scss */
 .featured-posts article header a {
   font-size: 1.25em;
   text-decoration: none;
 }
-/* line 38, ../scss/modules/featured_posts.scss */
+/* line 45, ../scss/modules/featured_posts.scss */
 .featured-posts article header a:hover {
   color: #00b6b6;
 }
-/* line 44, ../scss/modules/featured_posts.scss */
+/* line 51, ../scss/modules/featured_posts.scss */
 .featured-posts article footer {
   background-color: rgba(31, 31, 31, 0.1);
   bottom: 0;
@@ -874,7 +909,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right;
   width: 100%;
 }
-/* line 53, ../scss/modules/featured_posts.scss */
+/* line 60, ../scss/modules/featured_posts.scss */
 .featured-posts article footer > a {
   font-style: italic;
   font-size: 0.875em;
@@ -962,11 +997,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 1, ../scss/modules/post.scss */
 .post {
-  padding-right: 60px;
+  padding-right: 2%;
 }
 /* line 5, ../scss/modules/post.scss */
 .post h2 {
-  font-size: 1.625em;
+  font-size: 1.875em;
   text-transform: none;
 }
 /* line 13, ../scss/modules/post.scss */
@@ -1097,18 +1132,24 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(0, 182, 182, 0.5);
 }
 
-/* line 4, ../scss/modules/about.scss */
+/* line 3, ../scss/modules/about.scss */
 .about p {
   margin-bottom: 10px;
 }
-/* line 7, ../scss/modules/about.scss */
+/* line 6, ../scss/modules/about.scss */
+.about p.highlight {
+  font-size: 3em;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+/* line 12, ../scss/modules/about.scss */
 .about p.ps {
   margin: 25px 0;
   font-style: italic;
 }
-/* line 17, ../scss/modules/about.scss */
+/* line 22, ../scss/modules/about.scss */
 .about h3 {
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
 /* line 1, ../scss/modules/comments.scss */
