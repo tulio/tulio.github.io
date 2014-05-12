@@ -1,0 +1,14 @@
+//
+// @mixin para media queries ===============================
+//
+@mixin breakpoint($point) {
+  @if $point == lg {
+    @media (max-width: 1200px) { @content; }
+  }
+  @else if $point == md {
+    @media (max-width: 992px) { @content; }
+  }
+  @else if $point == sm {
+    @media (max-width: 768px)  { @content; }
+  }
+}
