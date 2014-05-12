@@ -6,9 +6,9 @@
     <title>{{ page.title }} - {{site.name}}</title>
     <meta name="viewport" content="width=device-width">
     {% if site.GH_ENV == 'gh_pages' %}
-      <link rel="stylesheet" href="/assets/stylesheets/style.dist.css">
+      <link rel="stylesheet" media="screen" href="/assets/stylesheets/style.dist.css">
     {% else %}
-      <link rel="stylesheet" href="/assets/stylesheets/style.dev.css">
+      <link rel="stylesheet" media="screen" href="/assets/stylesheets/style.dev.css">
     {% endif %}
     <link rel="icon" type="image/x-icon" href="/assets/images/tulio.ico" />
   </head>
@@ -118,12 +118,12 @@
           <h4>Hospedado pelo</h4>
           <a href="http://pages.github.com/">GitHub Pages</a>
         </nav>
-
-        <p class="pull-right">
-          Copyright © 2014 Túlio Freitas.
-        </p>
-          
       </div>
+
+      <p class="full">
+        Copyright © 2014 Túlio Freitas.
+      </p>
+      
     </footer>
   </body>
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
