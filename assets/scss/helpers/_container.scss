@@ -1,5 +1,17 @@
+//
 // CONTAINER ==============================================
+//
 .container, %container {
 	margin: 0 auto;
 	width: 1142px;
+
+	@include breakpoint(lg) { 
+		padding: 0 2%;
+		width: 100%; 
+	}
+
+	@include breakpoint(sm) {
+		padding: 0 1%;
+	}
+
 }
