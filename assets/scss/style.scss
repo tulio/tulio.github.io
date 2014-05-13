@@ -3,6 +3,9 @@
 @import "vendor/bourbon/bourbon";
 @import "vendor/syntax";
 
+// Load Media Queries
+@import "media/media_queries";
+
 // Load helpers
 @import "helpers/container";
 @import "helpers/box_shadow";
