@@ -2,6 +2,10 @@
 	float: right;
 	width: 25%;
 
+	@include breakpoint(lg) { 
+		display: none;
+	}
+
 	h3 {
 		@extend %title-margin;
 	}
