@@ -1,9 +1,10 @@
 .main-header {
+
+
 	@extend %container;
-	
+
 	display: table;
 	padding: 15px 0;
-
 
 
 	a {
@@ -23,6 +24,10 @@
 			
 			color: $secondary-color;
 		}
+
+		@include breakpoint(lg) { 
+			text-align: center;
+		}
 	}
 	
 	.main-nav {
@@ -30,6 +35,10 @@
 
 		padding-top: 10px;
 		float: right;
+
+		@include breakpoint(lg) { 
+			display: none;
+		}
 	}
 
 	ul {
