@@ -8,12 +8,24 @@
 	.wrap-header {
 		background: #010101;
 	}
+
+	@include breakpoint(sm) {
+		margin: 0;
+		position: fixed;
+		z-index: 10;
+	}
+	
 }
 .top {
 	@extend %container;
 	@extend %clearfix;
+
+	@include breakpoint(lg) {
+		padding: em(5) 2%;
+	}
 	
 	padding: 5px 0;
+
 
 	> ul {
 		float: left;
@@ -30,6 +42,9 @@
 			&:hover {
 				color: $secondary-color; 
 			}
+		}
+		@include breakpoint(lg) { 
+			display: none;
 		}
 	}
 
@@ -61,7 +76,7 @@
 			font-size: em(16);
 			padding: 5px 25px 5px 5px;
 			width: 80px;
-			
+
 			&:focus {
 				@include transition (all 0.7s ease-in-out);
 				width: 200px;
