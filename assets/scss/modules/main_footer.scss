@@ -4,7 +4,10 @@
 	font-size: em(16);
 	margin-top: 30px;
 	overflow: hidden;
+	padding: 30px 0;
+	text-align: center;
 	width: 100%;
+
 
 	h4 {
 		border-bottom: 1px solid $secondary-color;
@@ -15,7 +18,10 @@
 		@extend %clearfix;
 		@extend %container;
 
-		padding: 30px 0;
+		@include breakpoint(lg) {
+			padding: 30px 2% 20px;
+		}
+		
 
 		a {
 			color: #C2C2C2;
@@ -28,12 +34,46 @@
 		}
 
 		> nav {
-			float: left;
-			margin-left: 50px;
+			display: inline-table;
 
-			&:first-child {
-				margin-left: 0;
+			&:nth-child(2) {
+				margin: 0 1%;
 			}
+
+			@include breakpoint(lg) {
+				margin: 0;
+				text-align: center;
+
+				&:nth-child(2) {
+					@include breakpoint(lg) {
+						padding: 0 4%;
+					}
+					@include breakpoint(sm) {
+						padding: 0;
+					}
+				}
+
+				@include breakpoint(sm) {
+					display: inline-block;
+					margin: em(4) 0;
+					text-align: center;
+					width: 100%;
+
+					> ul {
+						display: inline-block;
+					}
+
+					> h4 {
+						border: none;
+						color: $secondary-color;
+						padding: 0;
+					}
+				}
+
+			}
+
+			
+
 
 			li {
 				float: left;
@@ -43,10 +83,11 @@
 				margin-left: 0;
 			}
 		}
-
-		.pull-right {
-			float: right;
-		}
-
+	}
+	.full {
+		display: inline-block;
+		margin-top: em(20);
+		text-align: center;
+		width: 100%;
 	}
 }
