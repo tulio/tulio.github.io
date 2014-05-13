@@ -2,6 +2,10 @@
 	@extend %container;
 	@extend %clearfix;
 
+	@include breakpoint(sm) {
+		padding-top: 150px;
+	};
+
 	h3 {
 		font-size: em(16);
 	}
