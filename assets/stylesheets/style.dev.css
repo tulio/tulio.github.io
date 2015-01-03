@@ -591,18 +591,11 @@ th {
   }
 }
 
-/* line 1, ../scss/helpers/_clearfix.scss */
-.top, .main-header .main-nav, .main-content, .main-footer .info, .search-results ul {
-  *zoom: 1;
-}
-/* line 17, ../scss/vendor/bourbon/addons/_clearfix.scss */
-.top:before, .main-header .main-nav:before, .main-content:before, .main-footer .info:before, .search-results ul:before, .top:after, .main-header .main-nav:after, .main-content:after, .main-footer .info:after, .search-results ul:after {
-  content: " ";
-  display: table;
-}
-/* line 23, ../scss/vendor/bourbon/addons/_clearfix.scss */
-.top:after, .main-header .main-nav:after, .main-content:after, .main-footer .info:after, .search-results ul:after {
+/* line 9, ../scss/vendor/bourbon/addons/_clearfix.scss */
+.top::after, .main-header .main-nav::after, .main-content::after, .main-footer .info::after, .search-results ul::after {
   clear: both;
+  content: "";
+  display: table;
 }
 
 /* line 4, ../scss/helpers/_post_area.scss */
@@ -905,7 +898,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 1, ../scss/modules/featured_posts.scss */
 .featured-posts {
-  width: 70%;
+  width: 100%;
 }
 @media (max-width: 1200px) {
   /* line 1, ../scss/modules/featured_posts.scss */
