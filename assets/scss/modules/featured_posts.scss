@@ -1,7 +1,7 @@
 .featured-posts {
 	@extend %post-area;
 
-	width: 70%;
+	width: 100%;
 
 	@include breakpoint(lg) { 
 		width: 100%;

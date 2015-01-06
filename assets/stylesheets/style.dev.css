@@ -600,7 +600,7 @@ th {
 
 /* line 4, ../scss/helpers/_post_area.scss */
 .featured-posts, .post, .search-results {
-  width: 75%;
+  width: 100%;
   float: left;
 }
 /* line 8, ../scss/helpers/_post_area.scss */
@@ -1107,20 +1107,16 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
-/* line 1, ../scss/modules/post.scss */
-.post {
-  padding-right: 2%;
-}
-/* line 5, ../scss/modules/post.scss */
+/* line 4, ../scss/modules/post.scss */
 .post h2 {
   font-size: 1.875em;
   text-transform: none;
 }
-/* line 13, ../scss/modules/post.scss */
+/* line 12, ../scss/modules/post.scss */
 .post .highlight {
   margin: 15px 0;
 }
-/* line 17, ../scss/modules/post.scss */
+/* line 16, ../scss/modules/post.scss */
 .post .date {
   color: #888;
   font-size: 0.75em;
