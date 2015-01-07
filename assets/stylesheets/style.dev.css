@@ -611,7 +611,7 @@ th {
 }
 
 /* line 5, ../scss/helpers/_title_margin.scss */
-.featured-posts h3, .archives h2, .post h2, .search-results .count, .about h2 {
+.archives h2, .post h2, .search-results .count, .about h2 {
   border-bottom: 1px solid #ccc;
   font-size: 1.5em;
   margin: 0 0 10px;
@@ -914,7 +914,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1em;
   line-height: 1.5;
 }
-/* line 19, ../scss/modules/featured_posts.scss */
+/* line 15, ../scss/modules/featured_posts.scss */
+.featured-posts h3 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+/* line 20, ../scss/modules/featured_posts.scss */
 .featured-posts article {
   border-radius: 15px;
   padding: 10px;
@@ -927,43 +932,43 @@ h1, h2, h3, h4, h5, h6 {
   width: 48%;
 }
 @media (max-width: 992px) {
-  /* line 19, ../scss/modules/featured_posts.scss */
+  /* line 20, ../scss/modules/featured_posts.scss */
   .featured-posts article {
     height: auto;
     width: 100%;
   }
-  /* line 34, ../scss/modules/featured_posts.scss */
+  /* line 35, ../scss/modules/featured_posts.scss */
   .featured-posts article p {
     margin-bottom: 30px;
   }
 }
-/* line 39, ../scss/modules/featured_posts.scss */
+/* line 40, ../scss/modules/featured_posts.scss */
 .featured-posts article * {
   color: #1F1F1F;
 }
-/* line 43, ../scss/modules/featured_posts.scss */
+/* line 44, ../scss/modules/featured_posts.scss */
 .featured-posts article:nth-child(2n+3) {
   float: right;
 }
-/* line 47, ../scss/modules/featured_posts.scss */
+/* line 48, ../scss/modules/featured_posts.scss */
 .featured-posts article:hover {
   background-color: rgba(204, 204, 204, 0.08);
 }
-/* line 51, ../scss/modules/featured_posts.scss */
+/* line 52, ../scss/modules/featured_posts.scss */
 .featured-posts article header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 5px;
 }
-/* line 54, ../scss/modules/featured_posts.scss */
+/* line 55, ../scss/modules/featured_posts.scss */
 .featured-posts article header a {
   font-size: 1.25em;
   text-decoration: none;
 }
-/* line 58, ../scss/modules/featured_posts.scss */
+/* line 59, ../scss/modules/featured_posts.scss */
 .featured-posts article header a:hover {
   color: #00b6b6;
 }
-/* line 64, ../scss/modules/featured_posts.scss */
+/* line 65, ../scss/modules/featured_posts.scss */
 .featured-posts article footer {
   background-color: rgba(31, 31, 31, 0.1);
   bottom: 0;
@@ -973,7 +978,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right;
   width: 100%;
 }
-/* line 73, ../scss/modules/featured_posts.scss */
+/* line 74, ../scss/modules/featured_posts.scss */
 .featured-posts article footer > a {
   font-style: italic;
   font-size: 0.875em;
