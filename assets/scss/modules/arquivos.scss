@@ -1,0 +1,56 @@
+.archives {
+	
+	div {
+		@extend %clearfix;
+
+		width: 100%;
+	}
+
+	h2 {
+		@extend %title-margin;
+		border-bottom: 1px solid #ccc;
+		margin: 0 0 10px;
+		padding-bottom: 10px;
+	}
+
+	h3 {
+		margin-bottom: 10px;
+	}
+
+	article {
+		width: 100%;
+
+		+ article {
+			margin-top: 25px;
+		}
+
+		&:last-child {
+			margin-bottom: 25px;
+		}
+	}
+
+	p {
+		font-size: em(15);
+		line-height: 1.1;
+	}
+
+	a {
+		color: #1F1F1F;
+
+		&:hover {
+			color: #1F1F1F;
+			opacity: 0.8;
+		}
+	}
+
+	.year {
+		background: $secondary-color;
+		box-shadow: 0 1px 3px #000;
+		color: #fff;
+		display: inline-block;
+		font-size: em(20);
+		margin-bottom: 25px;
+		padding: em(5) em(15);
+		width: auto;
+	}
+}

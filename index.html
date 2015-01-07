@@ -5,7 +5,7 @@ title: Home
 
 <section class="featured-posts">
 	<h3>Últimas publicações</h3>
-	{% for post in site.posts limit 4 %}
+	{% for post in site.posts limit:4 %}
 		<article>
 			<header>
 				<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>

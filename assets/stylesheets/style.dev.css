@@ -592,7 +592,7 @@ th {
 }
 
 /* line 9, ../scss/vendor/bourbon/addons/_clearfix.scss */
-.top::after, .main-header .main-nav::after, .main-content::after, .main-footer .info::after, .search-results ul::after {
+.top::after, .main-header .main-nav::after, .main-content::after, .archives div::after, .main-footer .info::after, .search-results ul::after {
   clear: both;
   content: "";
   display: table;
@@ -611,7 +611,7 @@ th {
 }
 
 /* line 5, ../scss/helpers/_title_margin.scss */
-.featured-posts h3, .main-aside h3, .post h2, .search-results .count, .about h2 {
+.featured-posts h3, .archives h2, .post h2, .search-results .count, .about h2 {
   margin: 0 0 20px;
   text-transform: uppercase;
 }
@@ -976,39 +976,56 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.875em;
 }
 
-/* line 1, ../scss/modules/main_aside.scss */
-.main-aside {
-  float: right;
-  width: 25%;
+/* line 3, ../scss/modules/arquivos.scss */
+.archives div {
+  width: 100%;
 }
-@media (max-width: 1200px) {
-  /* line 1, ../scss/modules/main_aside.scss */
-  .main-aside {
-    display: none;
-  }
+/* line 9, ../scss/modules/arquivos.scss */
+.archives h2 {
+  border-bottom: 1px solid #ccc;
+  margin: 0 0 10px;
+  padding-bottom: 10px;
 }
-/* line 13, ../scss/modules/main_aside.scss */
-.main-aside .aside-nav {
-  border-radius: 15px;
-  padding: 10px;
-  border: 1px double rgba(0, 0, 0, 0.1);
+/* line 16, ../scss/modules/arquivos.scss */
+.archives h3 {
+  margin-bottom: 10px;
 }
-/* line 19, ../scss/modules/main_aside.scss */
-.main-aside .aside-nav ul li {
-  margin-top: 5px;
+/* line 20, ../scss/modules/arquivos.scss */
+.archives article {
+  width: 100%;
 }
-/* line 22, ../scss/modules/main_aside.scss */
-.main-aside .aside-nav ul li:first-child {
-  margin-top: 0;
+/* line 23, ../scss/modules/arquivos.scss */
+.archives article + article {
+  margin-top: 25px;
 }
-/* line 28, ../scss/modules/main_aside.scss */
-.main-aside .aside-nav a {
+/* line 27, ../scss/modules/arquivos.scss */
+.archives article:last-child {
+  margin-bottom: 25px;
+}
+/* line 32, ../scss/modules/arquivos.scss */
+.archives p {
+  font-size: 0.9375em;
+  line-height: 1.1;
+}
+/* line 37, ../scss/modules/arquivos.scss */
+.archives a {
   color: #1F1F1F;
-  text-decoration: none;
 }
-/* line 31, ../scss/modules/main_aside.scss */
-.main-aside .aside-nav a:hover {
-  border-bottom: 2px solid #00b6b6;
+/* line 40, ../scss/modules/arquivos.scss */
+.archives a:hover {
+  color: #1F1F1F;
+  opacity: 0.8;
+}
+/* line 46, ../scss/modules/arquivos.scss */
+.archives .year {
+  background: #00b6b6;
+  box-shadow: 0 1px 3px #000;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.25em;
+  margin-bottom: 25px;
+  padding: 0.3125em 0.9375em;
+  width: auto;
 }
 
 /* line 1, ../scss/modules/main_footer.scss */
