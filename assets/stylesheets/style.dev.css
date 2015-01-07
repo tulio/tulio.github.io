@@ -609,6 +609,10 @@ th {
   font-size: 1.125em;
   line-height: 1.8;
 }
+/* line 14, ../scss/helpers/_post_area.scss */
+.featured-posts img, .post img, .search-results img {
+  max-width: 100%;
+}
 
 /* line 5, ../scss/helpers/_title_margin.scss */
 .archives h2, .post h2, .search-results .count, .about h2 {
