@@ -760,7 +760,7 @@ h1, h2, h3, h4, h5, h6 {
 .top > ul a:hover {
   color: #00b6b6;
 }
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   /* line 30, ../scss/modules/header.scss */
   .top > ul {
     display: none;

@@ -43,7 +43,7 @@
 				color: $secondary-color; 
 			}
 		}
-		@include breakpoint(lg) { 
+		@include breakpoint(sm) { 
 			display: none;
 		}
 	}
