@@ -1,12 +1,9 @@
 .post {
 	@extend %post-area;
 
-	h2 {
-	
+	h2 {	
 		@extend %title-margin;
 
-		font-size: em(30);
-		text-transform: none;
 	}
 
 	.highlight {

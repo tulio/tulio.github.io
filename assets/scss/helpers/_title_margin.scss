@@ -1,8 +1,11 @@
 //
-// Placeholder para h2 e h3 usados como títulos.
+// Placeholder para h2.
 //
 
 %title-margin {
-	margin: 0 0 20px;
+	border-bottom: 1px solid #ccc;
+	font-size: em(24);
+	margin: 0 0 10px;
+	padding-bottom: 10px;
 	text-transform: uppercase;
 }

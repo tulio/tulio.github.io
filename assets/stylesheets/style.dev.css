@@ -612,7 +612,10 @@ th {
 
 /* line 5, ../scss/helpers/_title_margin.scss */
 .featured-posts h3, .archives h2, .post h2, .search-results .count, .about h2 {
-  margin: 0 0 20px;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.5em;
+  margin: 0 0 10px;
+  padding-bottom: 10px;
   text-transform: uppercase;
 }
 
@@ -980,43 +983,37 @@ h1, h2, h3, h4, h5, h6 {
 .archives div {
   width: 100%;
 }
-/* line 9, ../scss/modules/arquivos.scss */
-.archives h2 {
-  border-bottom: 1px solid #ccc;
-  margin: 0 0 10px;
-  padding-bottom: 10px;
-}
-/* line 16, ../scss/modules/arquivos.scss */
+/* line 13, ../scss/modules/arquivos.scss */
 .archives h3 {
   margin-bottom: 10px;
 }
-/* line 20, ../scss/modules/arquivos.scss */
+/* line 17, ../scss/modules/arquivos.scss */
 .archives article {
   width: 100%;
 }
-/* line 23, ../scss/modules/arquivos.scss */
+/* line 20, ../scss/modules/arquivos.scss */
 .archives article + article {
   margin-top: 25px;
 }
-/* line 27, ../scss/modules/arquivos.scss */
+/* line 24, ../scss/modules/arquivos.scss */
 .archives article:last-child {
   margin-bottom: 25px;
 }
-/* line 32, ../scss/modules/arquivos.scss */
+/* line 29, ../scss/modules/arquivos.scss */
 .archives p {
   font-size: 0.9375em;
   line-height: 1.1;
 }
-/* line 37, ../scss/modules/arquivos.scss */
+/* line 34, ../scss/modules/arquivos.scss */
 .archives a {
   color: #1F1F1F;
 }
-/* line 40, ../scss/modules/arquivos.scss */
+/* line 37, ../scss/modules/arquivos.scss */
 .archives a:hover {
   color: #1F1F1F;
   opacity: 0.8;
 }
-/* line 46, ../scss/modules/arquivos.scss */
+/* line 43, ../scss/modules/arquivos.scss */
 .archives .year {
   background: #00b6b6;
   box-shadow: 0 1px 3px #000;
@@ -1124,16 +1121,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
-/* line 4, ../scss/modules/post.scss */
-.post h2 {
-  font-size: 1.875em;
-  text-transform: none;
-}
-/* line 12, ../scss/modules/post.scss */
+/* line 9, ../scss/modules/post.scss */
 .post .highlight {
   margin: 15px 0;
 }
-/* line 16, ../scss/modules/post.scss */
+/* line 13, ../scss/modules/post.scss */
 .post .date {
   color: #888;
   font-size: 0.75em;
