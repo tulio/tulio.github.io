@@ -5,7 +5,8 @@
 
 	display: table;
 	padding: 15px 0;
-
+	position: relative;
+	
 
 	a {
 		color: #1F1F1F;
@@ -27,6 +28,7 @@
 
 		@include breakpoint(lg) { 
 			text-align: center;
+			width: 100%;
 		}
 	}
 	
@@ -37,27 +39,123 @@
 		float: right;
 
 		@include breakpoint(lg) { 
-			display: none;
+			display: block;
+			left: 2%;
+			padding: 0;
+			position: absolute;
+			top: 50%;
 		}
 	}
 
 	ul {
 		float: right;
-		> li {
-			float: left;
-			> a {
-				font-family: 'Ubuntu Condensed', sans-serif;
-				font-size: em(18);
-				margin-left: em(25);
-				text-transform: uppercase;
-
-				&:hover {
-					border-bottom: 4px solid $secondary-color;
+		
+		@include breakpoint(lg) { 
+			width: 100%;
+			&:hover {
+				.sub {
+					display: block;
 				}
 			}
-			&:first-child a {
+		}
+
+		a {
+			font-family: 'Ubuntu Condensed', sans-serif;
+			font-size: em(18);
+			text-transform: uppercase;
+		}
+
+		// Li que contem o ícone de menu responsivo
+		.menu {
+			cursor: pointer;
+			display: none;
+
+			.icon {
+				background: $secondary-color;
+				float: left;
+				height: 3px;
+				position: relative;
+				width: em(30);
+
+				&:after, &:before {
+					content: "";
+					background: $secondary-color;
+					height: 3px;
+					position: absolute; 
+					width: em(30);
+				}
+
+				&:before {
+					top: 7px;
+				}
+
+				&:after {
+					bottom: 7px;
+				}
+			}
+
+			@include breakpoint(lg) { 
+				display: block;
+			}
+
+		}
+		
+		li {
+			float: left;
+			margin-left: em(25);
+			&:first-child {
 				margin-left: 0;
 			}
+
+			a {
+				&:hover {
+					border-bottom: 4px solid $secondary-color;
+				}				
+			}
+		
+			@include breakpoint(lg) { 
+				clear: left;
+				margin-left: 0;
+
+				a {
+					&:hover {
+						border-bottom: none;
+						color: $secondary-color;;
+					}
+				}
+			}
 		}
+
+		> .sub {
+			display: block;
+
+			> li {
+				display: block;
+			}
+
+			@include breakpoint(lg) {
+				background: #fff;
+				border: 1px solid #ccc;
+				border-radius: 5%;
+				clear: left;
+				display: none;
+				float: left;
+				padding: 5% 10%;
+				position: relative;
+				top: 32px;
+				width: auto;
+				z-index: 10;
+
+				li {
+					height: em(40);
+				}
+
+				a {
+					font-size: em(24);
+				}
+			}
+
+		}
+		
 	}
 }

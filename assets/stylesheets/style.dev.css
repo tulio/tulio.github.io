@@ -821,13 +821,14 @@ h1, h2, h3, h4, h5, h6 {
 .main-header {
   display: table;
   padding: 15px 0;
+  position: relative;
 }
-/* line 10, ../scss/modules/main_header.scss */
+/* line 11, ../scss/modules/main_header.scss */
 .main-header a {
   color: #1F1F1F;
   text-decoration: none;
 }
-/* line 15, ../scss/modules/main_header.scss */
+/* line 16, ../scss/modules/main_header.scss */
 .main-header h1 {
   display: table-cell;
   font-family: 'Ubuntu Condensed', sans-serif;
@@ -835,7 +836,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   width: 200px;
 }
-/* line 22, ../scss/modules/main_header.scss */
+/* line 23, ../scss/modules/main_header.scss */
 .main-header h1 > a:hover {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -843,44 +844,138 @@ h1, h2, h3, h4, h5, h6 {
   color: #00b6b6;
 }
 @media (max-width: 1200px) {
-  /* line 15, ../scss/modules/main_header.scss */
+  /* line 16, ../scss/modules/main_header.scss */
   .main-header h1 {
     text-align: center;
+    width: 100%;
   }
 }
-/* line 33, ../scss/modules/main_header.scss */
+/* line 35, ../scss/modules/main_header.scss */
 .main-header .main-nav {
   padding-top: 10px;
   float: right;
 }
 @media (max-width: 1200px) {
-  /* line 33, ../scss/modules/main_header.scss */
+  /* line 35, ../scss/modules/main_header.scss */
   .main-header .main-nav {
-    display: none;
+    display: block;
+    left: 2%;
+    padding: 0;
+    position: absolute;
+    top: 50%;
   }
 }
-/* line 44, ../scss/modules/main_header.scss */
+/* line 50, ../scss/modules/main_header.scss */
 .main-header ul {
   float: right;
 }
-/* line 46, ../scss/modules/main_header.scss */
-.main-header ul > li {
-  float: left;
+@media (max-width: 1200px) {
+  /* line 50, ../scss/modules/main_header.scss */
+  .main-header ul {
+    width: 100%;
+  }
+  /* line 56, ../scss/modules/main_header.scss */
+  .main-header ul:hover .sub {
+    display: block;
+  }
 }
-/* line 48, ../scss/modules/main_header.scss */
-.main-header ul > li > a {
+/* line 62, ../scss/modules/main_header.scss */
+.main-header ul a {
   font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 1.125em;
-  margin-left: 1.5625em;
   text-transform: uppercase;
 }
-/* line 54, ../scss/modules/main_header.scss */
-.main-header ul > li > a:hover {
+/* line 69, ../scss/modules/main_header.scss */
+.main-header ul .menu {
+  cursor: pointer;
+  display: none;
+}
+/* line 73, ../scss/modules/main_header.scss */
+.main-header ul .menu .icon {
+  background: #00b6b6;
+  float: left;
+  height: 3px;
+  position: relative;
+  width: 1.875em;
+}
+/* line 80, ../scss/modules/main_header.scss */
+.main-header ul .menu .icon:after, .main-header ul .menu .icon:before {
+  content: "";
+  background: #00b6b6;
+  height: 3px;
+  position: absolute;
+  width: 1.875em;
+}
+/* line 88, ../scss/modules/main_header.scss */
+.main-header ul .menu .icon:before {
+  top: 7px;
+}
+/* line 92, ../scss/modules/main_header.scss */
+.main-header ul .menu .icon:after {
+  bottom: 7px;
+}
+@media (max-width: 1200px) {
+  /* line 69, ../scss/modules/main_header.scss */
+  .main-header ul .menu {
+    display: block;
+  }
+}
+/* line 103, ../scss/modules/main_header.scss */
+.main-header ul li {
+  float: left;
+  margin-left: 1.5625em;
+}
+/* line 106, ../scss/modules/main_header.scss */
+.main-header ul li:first-child {
+  margin-left: 0;
+}
+/* line 111, ../scss/modules/main_header.scss */
+.main-header ul li a:hover {
   border-bottom: 4px solid #00b6b6;
 }
-/* line 58, ../scss/modules/main_header.scss */
-.main-header ul > li:first-child a {
-  margin-left: 0;
+@media (max-width: 1200px) {
+  /* line 103, ../scss/modules/main_header.scss */
+  .main-header ul li {
+    clear: left;
+    margin-left: 0;
+  }
+  /* line 121, ../scss/modules/main_header.scss */
+  .main-header ul li a:hover {
+    border-bottom: none;
+    color: #00b6b6;
+  }
+}
+/* line 129, ../scss/modules/main_header.scss */
+.main-header ul > .sub {
+  display: block;
+}
+/* line 132, ../scss/modules/main_header.scss */
+.main-header ul > .sub > li {
+  display: block;
+}
+@media (max-width: 1200px) {
+  /* line 129, ../scss/modules/main_header.scss */
+  .main-header ul > .sub {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    clear: left;
+    display: none;
+    float: left;
+    padding: 5% 10%;
+    position: relative;
+    top: 32px;
+    width: auto;
+    z-index: 10;
+  }
+  /* line 149, ../scss/modules/main_header.scss */
+  .main-header ul > .sub li {
+    height: 2.5em;
+  }
+  /* line 153, ../scss/modules/main_header.scss */
+  .main-header ul > .sub a {
+    font-size: 1.5em;
+  }
 }
 
 @media (max-width: 768px) {
