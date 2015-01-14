@@ -3,6 +3,10 @@ layout: post
 title:  "Meu post, apenas um exemplo"
 date:   2014-03-01 19:11:44
 categories: testing
+sitemap:
+  changefreq: monthly
+  priority: 0.9
+  lastmod: 2014-03-01T12:19:55-03:00
 ---
 
 Enim, quam, praesentium, nesciunt, fuga placeat accusamus facilis numquam neque incidunt ipsa explicabo quaerat ratione temporibus soluta labore harum tenetur aliquid odio!

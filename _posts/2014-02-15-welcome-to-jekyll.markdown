@@ -3,6 +3,10 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2014-02-15 22:48:44
 categories: testing
+sitemap:
+  changefreq: monthly
+  priority: 0.9
+  lastmod: 2015-02-15T10:49:32-03:00
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

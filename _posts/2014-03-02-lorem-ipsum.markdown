@@ -3,6 +3,10 @@ layout: post
 title:  "Lorem Ipsum"
 date:   2014-03-02 01:04:44
 categories: testing
+sitemap:
+  changefreq: monthly
+  priority: 0.9
+  lastmod: 2014-03-02T16:25:45-03:00
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, suscipit neque rerum magni accusantium obcaecati doloribus voluptas. Vitae, quia, nemo, similique minima natus reprehenderit doloremque totam debitis nostrum eligendi quo.

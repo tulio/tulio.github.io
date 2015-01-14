@@ -1,6 +1,10 @@
 ---
 layout: default
 title: Arquivos
+sitemap:
+  changefreq: daily
+  priority: 0.8
+  lastmod: 2015-01-14T12:17:32-03:00
 ---
 
 <section class="archives">
@@ -8,9 +12,6 @@ title: Arquivos
 	{% for post in site.posts  %}
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
-
-   
-
 
     {% if forloop.first %}
     <p class="year" id="{{ this_year }}-ref">{{this_year}}</p>

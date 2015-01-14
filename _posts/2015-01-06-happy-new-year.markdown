@@ -3,6 +3,10 @@ layout: post
 title:  "Happly New Year!"
 date:   2015-01-06 17:24:44
 categories: testing
+sitemap:
+  changefreq: monthly
+  priority: 0.9
+  lastmod: 2015-01-06T12:18:38-03:00
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
